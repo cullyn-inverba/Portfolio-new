@@ -9,7 +9,6 @@ import { MatIconModule } from '@angular/material/icon';
 
 import { ShellComponent } from './shell/shell.component';
 
-
 const components = [ShellComponent];
 
 const modules = [

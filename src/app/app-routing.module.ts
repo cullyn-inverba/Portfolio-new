@@ -3,7 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent}
+  {path: '', component: HomeComponent},
+  {path: 'research', loadChildren: () => import('./research/research.module').then(m => m.ResearchModule)},
+  {path: 'works', loadChildren: () => import('./works/works.module').then(m => m.WorksModule)},
+  {path: 'education', loadChildren: () => import('./education/education.module').then(m => m.EducationModule)},
+  {path: 'contact', loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)},
 ];
 
 @NgModule({

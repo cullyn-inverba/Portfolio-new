@@ -1,34 +1,34 @@
 <body class="mat-app-background">
   <mat-toolbar>
-    <mat-icon class="logo" routerLink="/" mat-icon>home</mat-icon>
+    <mat-icon class="logo" routerLink ="/" routerLinkActive='active-link' mat-icon>home</mat-icon>
     <span class="fill-space"></span>
     <div *ngIf="!(isHandset$ | async)">
-      <a mat-button routerLink="/research">
+      <a mat-button  routerLink ="/research">
         <mat-icon>biotech</mat-icon><b>Resarch</b></a
       >
-      <a mat-button routerLink="/works"
+      <a mat-button  routerLink ="/works"
         ><mat-icon>architecture</mat-icon><b>Works</b></a
       >
-      <a mat-button routerLink="/education"
+      <a mat-button  routerLink ="/education"
         ><mat-icon style="margin-right: 0.4em;">school</mat-icon><b>Education</b></a
       >
     </div>
     <div *ngIf="isHandset$ | async">
-      <a mat-icon-button class="logo" routerLink="/research">
+      <a mat-icon-button class="logo"  routerLink ="/research">
         <mat-icon>biotech</mat-icon>
         <div class="label3">Resarch</div>
       </a>
-      <a mat-icon-button class="logo" routerLink="/works">
+      <a mat-icon-button class="logo"  routerLink ="/works">
         <mat-icon>architecture</mat-icon>
         <div class="label2">Works</div>
       </a>
-      <a mat-icon-button class="logo" routerLink="/education">
+      <a mat-icon-button class="logo"  routerLink ="/education">
         <mat-icon>school</mat-icon>
         <div class="label">Education</div>
       </a>
     </div>
     <span class="fill-space"></span>
-    <button mat-raised-button routerLink="/contact"><b>Contact</b></button>
+    <button mat-raised-button  routerLink ="/contact"><b>Contact</b></button>
   </mat-toolbar>
 
   <ng-content></ng-content>

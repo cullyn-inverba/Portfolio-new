@@ -1,3 +1,87 @@
-.sidenav-container {
-    height: 100%;
+.logo {
+  font-size: 1.2em;
+  cursor: pointer;
+  outline: none;
+}
+
+.logo:hover {
+  color: #fb8746 ;
+}
+
+.mat-raised-button {
+  background-image: linear-gradient(180deg, #fbc070 0%, #fb8746 100%);
+  font-family: 'roboto', sans-serif;
+}
+
+
+.mat-button:hover {
+    color:  #fb8746 ;
+ }
+
+.mat-toolbar {
+  position: fixed;
+  z-index: 10;
+  background-color: transparent;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.fill-space {
+  flex: 1 1 auto;
+}
+
+.mat-icon-button{
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+}
+
+.mat-button{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.label {
+    font-size: 12px;
+    display: grid;
+    place-items: center;
+    margin-top: -1em;
+    position: relative;
+    right: 18%;
+}
+
+.label2 {
+    font-size: 12px;
+    display: grid;
+    place-items: center;
+    margin-top: -1em;
+    position: relative;
+    left: 1%;
+}
+
+.label3 {
+    font-size: 12px;
+    display: grid;
+    place-items: center;
+    margin-top: -1em;
+    position: relative;
+    right: 9%;
+}
+
+
+
+@media only screen and (max-width: 602px) {
+    .mat-toolbar {
+        position: fixed;
+        bottom: 0;
+        height: 4em;
+      }
+}
+
+@media only screen and (min-width: 602px) {
+    .mat-toolbar {
+        position: fixed;
+        top: 0;
+    }
+    .mat-icon{
+        margin-right: 0.2em;
+    }
 }

@@ -1,6 +1,6 @@
 <body class="mat-app-background">
   <mat-toolbar>
-    <mat-icon class="logo" routerLink ="/" routerLinkActive='active-link' mat-icon>home</mat-icon>
+    <mat-icon class="logo" routerLink ="/home" routerLinkActive='active-link' mat-icon>home</mat-icon>
     <span class="fill-space"></span>
     <div *ngIf="!(isHandset$ | async)">
       <a mat-button  routerLink ="/research">
@@ -14,7 +14,7 @@
       >
     </div>
     <div *ngIf="isHandset$ | async">
-      <a mat-icon-button class="logo"  routerLink ="/research">
+      <a mat-icon-button class="logo" routerLink ="/research">
         <mat-icon>biotech</mat-icon>
         <div class="label3">Resarch</div>
       </a>

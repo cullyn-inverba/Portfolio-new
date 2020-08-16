@@ -17,17 +17,23 @@ body:hover {
 }
 
 .logo:hover {
-  color: #fb8746 ;
+  color: #F59F37 ;
 }
 
-.mat-raised-button {
+.mat-raised-button.orange {
   background-image: linear-gradient(180deg, #fbc070 0%, #fb8746 100%);
-  font-family: 'roboto', sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-raised-button.blue {
+  background-image: linear-gradient(180deg, #7687e7 0%, #002384 100%);
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 
 .mat-button:hover {
-    color:  #fb8746;
+    color:  #F59F37;
  }
 
 .mat-toolbar {
@@ -67,7 +73,7 @@ body:hover {
     place-items: center;
     margin-top: -1em;
     position: relative;
-    left: 1%;
+    right: 1%;
 }
 
 .label3 {
@@ -80,20 +86,20 @@ body:hover {
 }
 
 .active-link1{
-  color:  #fb8746 !important; 
+  color:  #F59F37 !important; 
   text-decoration: underline;
   text-decoration-thickness: from-font;
   text-underline-position: under;
 }
 
 .active-link2{
-  color:  #fb8746 !important; 
+  color:  #F59F37 !important; 
 }
 
 
 @media only screen and (max-width: 602px) {
     .mat-toolbar {
-        height: 4em;
+        height: 3.5em;
       }
 }
 

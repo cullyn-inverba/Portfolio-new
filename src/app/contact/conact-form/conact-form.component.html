@@ -1,1 +1,69 @@
-<p>conact-form works!</p>
+<div class='bg'>
+    <mat-card>
+    <h1 [hidden]='success' [hidden]='submitted' >Contact me</h1>
+    <h1 class='success' *ngIf='success' >Success! Message Received</h1>
+    <h1 class='failure' *ngIf='error' >Well, this is embarrassing</h1>
+
+    <mat-card-content>
+    <form [formGroup]="myForm" [hidden]='submitted' (ngSubmit)='submitHandler()'>
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput required formControlName="name" />
+        <mat-icon matSuffix *ngIf="name.untouched">mood</mat-icon>
+        <mat-icon matSuffix *ngIf="name.invalid && name.touched" color='warn'>mood</mat-icon>
+        <mat-icon matSuffix *ngIf="name.valid && name.touched" color="accent">mood</mat-icon>
+        <mat-error>All right then, keep your secrets.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input
+          matInput
+          type="email"
+          placeholder="name@example.com"
+          required
+          formControlName="email"
+        />
+        <mat-error>Not a valid email 😕</mat-error>
+        <mat-icon matSuffix *ngIf="email.untouched">email</mat-icon>
+        <mat-icon matSuffix *ngIf="email.invalid && email.touched" color="warn">email</mat-icon>
+        <mat-icon matSuffix *ngIf="email.valid && email.touched" color="accent">email</mat-icon>
+      </mat-form-field>
+     
+      <mat-form-field>
+        <mat-label>Message</mat-label>
+        <textarea
+          matInput
+          required
+          cdkTextareaAutosize
+          cdkAutosizeMinRows="8"
+          cdkAutosizeMaxRows="15"
+          placeholder="Did you ever hear the Tragedy of Darth Plagueis the wise?"
+          formControlName="message"
+        >
+        </textarea>
+        <mat-error >I'll be the one, if you want me too...</mat-error>
+        <mat-icon matSuffix *ngIf="message.untouched">chat</mat-icon>
+        <mat-icon matSuffix *ngIf="message.invalid && message.touched" color='warn'>chat</mat-icon>
+        <mat-icon matSuffix *ngIf="message.valid && message.touched" color="accent">chat</mat-icon>
+      </mat-form-field>
+      <button mat-flat-button type='submit' [disabled]="myForm.invalid" [hidden]='success' color="accent">
+        Submit
+      </button>
+      <div  class="svg-container">
+        <img class=svg-content src="/assets/contact.svg">
+      </div>
+    </form>
+    <div class ='success-box' *ngIf='success'>
+      <div class="svg-container2">
+        <img class=svg-content2 src="/assets/contact2.svg">
+      </div>
+    </div>
+    <div *ngIf='error'>
+      <p>Something went wrong 😟</p>
+      <p>Here's my email: <strong style="color: #FF9800">cullyn.newman@gmail.com</strong></p>
+      <a>Or... call me maybe? <strong style="color: #FF9800">1+971-772-6835</strong> </a>
+    </div>
+    </mat-card-content>
+    <h1 class='success' *ngIf='success' >Call me maybe? 1+971-772-6835</h1>
+  </mat-card>
+</div>

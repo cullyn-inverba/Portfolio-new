@@ -49,11 +49,11 @@ mat-card {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: background-position 2000ms ease-out;
+    transition: background-position 1500ms ease-in-out;
   }
   h1:hover {
     background-position: left center;
-    transition: background-position 2000ms ease-out;
+    transition: background-position 2000ms ease-in-out;
   }
   
   .success {
@@ -75,7 +75,7 @@ mat-card {
   }
   .success:hover {
     background-position: left center;
-    transition: background-position 2000ms ease-out;
+    transition: background-position 2000ms ease-in-out;
   }
   
   
@@ -98,7 +98,7 @@ mat-card {
   }
   .failure:hover {
     background-position: left center;
-    transition: background-position 2000ms ease-out;
+    transition: background-position 2000ms ease-in-out;
   }
 
   mat-form-field {

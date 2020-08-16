@@ -1,0 +1,119 @@
+.bg {
+    background-image: url('/assets/research.jpg');
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-attachment: fixed;
+    background-position: left 75% top 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  
+  .fill-space {
+    flex: 1 1 auto;
+  }
+  
+  .mat-raised-button{
+    background-image: linear-gradient(180deg, #fbc070 0%, #fb8746 100%);
+    box-shadow: none !important;
+  }
+  
+  .mat-toolbar {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #3F51B5 20%, #3c31d448  100%);
+  }
+  
+  .logo {
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+    padding-right: 0.3em;
+  }
+  
+  .current{
+    background-image: linear-gradient(60deg, #45caff  0%, #40c2ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .content{
+    min-width: 450px;
+    position: fixed;
+    top: 10%;
+    height: 85%;
+    overflow-y: scroll;
+    display: flex-box;
+    flex-direction: column;
+    position: absolute;
+  }
+  
+  mat-card {
+    margin: 0 2em 2em 2em;
+    max-width: 65ch;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #3f51b5ed 0%, #6046d3e1  100%);
+    transition: 1s ease-out;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  mat-card-title {
+    font-weight: 500;
+    font-size: 24px !important;
+    color: #212f81;
+    text-shadow: 0px 1px 0px rgba(255,255,255,.1), 0px -1px 0px rgba(0,0,0,.7);
+  }
+  
+  mat-card:hover {
+    transform: translateY(-0.3rem);
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #3948ab 0%, #543dbdec  100%);
+    transition: 1s ease-out;
+  }
+
+  @media only screen and (max-width: 602px) {
+    mat-card {
+        background-image: linear-gradient(90deg, #3948ab 0%, #543dbdec  100%);
+      }
+}
+  
+  h2 {
+    color:#d8daec;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 4px;
+    margin-top: 24px;
+  }
+  
+  .hub {
+    color: #FFAB40;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hub:hover {
+    color: #f77930;
+  }
+  
+  .orcid {
+    color: #d8daecea;
+    text-decoration: none;
+  }
+  
+  .orcid:hover {
+    color: #fdfdfd;
+    text-decoration: none;
+  }
+  
+  li:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  

@@ -1,1 +1,104 @@
-<p>work-history works!</p>
+<div class="bg">
+  <mat-tab-group mat-align-tabs="center" dynamicHeight>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="tab-icon">square_foot</mat-icon>
+        <span>Professional</span>
+      </ng-template>
+      <div class="tab-content">
+        <mat-card>
+          <mat-card-header>
+            <div
+              mat-card-avatar
+              class="header-image"
+              style="background-image: url('/assets/me.jpg');"
+            ></div>
+            <mat-card-title>Cullyn.io</mat-card-title>
+            <mat-card-subtitle
+              >Made this site myself using Angular 10!</mat-card-subtitle
+            >
+          </mat-card-header>
+          <mat-card-content>
+            <div class="svg-container2">
+              <img class="svg-content2" src="/assets/working.svg" />
+            </div>
+          </mat-card-content>
+          <mat-card-actions align="end">
+            <a
+              mat-flat-button
+              href="https://github.com/cullyn-inverba/Portfolio-new"
+              target="_blank"
+              rel="noopener"
+              color="primary"
+              >View</a
+            >
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="tab-icon">keyboard</mat-icon>
+        <span>Educational</span>
+      </ng-template>
+      <div class="tab-content">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>LateX Write-Ups</mat-card-title>
+            <mat-card-subtitle
+              >Repository for school notes/assignments written in
+              LateX</mat-card-subtitle
+            >
+          </mat-card-header>
+          <mat-card-content>
+            <div class="svg-container2">
+              <img class="svg-content2" src="/assets/latex.svg" />
+            </div>
+          </mat-card-content>
+          <mat-card-actions align="end">
+            <a
+              mat-flat-button
+              href="https://github.com/cullyn-inverba/Notes"
+              target="_blank"
+              rel="noopener"
+              color="primary"
+              >View</a
+            >
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="tab-icon">emoji_objects</mat-icon>
+        <span>Hobby</span>
+      </ng-template>
+      <div class="tab-content">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>Nothing yet, Unfortunately</mat-card-title>
+            <mat-card-subtitle
+              >Check back later &mdash; I have something excited
+              planned!</mat-card-subtitle
+            >
+          </mat-card-header>
+          <mat-card-content>
+            <div class="svg-container2">
+              <img class="svg-content2" src="/assets/idea.svg" />
+            </div>
+          </mat-card-content>
+          <mat-card-actions align="end">
+            <button mat-flat-button disabled color="primary">
+              Check it out
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+  <a 
+  class='image-credit'
+  href="https://www.artstation.com/beaulamb"
+  target="_blank"
+  rel="noopener">Image credit: Beau Lamb</a>
+</div>

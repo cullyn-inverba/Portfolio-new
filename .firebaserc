@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "cullyn-portfolio": {
+      "hosting": {
+        "portfolio": [
+          "cullyn-portfolio"
+        ]
+      }
+    }
+  }
+}

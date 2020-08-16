@@ -79,7 +79,14 @@ body:hover {
     right: 9%;
 }
 
-.active-link{
+.active-link1{
+  color:  #fb8746 !important; 
+  text-decoration: underline;
+  text-decoration-thickness: from-font;
+  text-underline-position: under;
+}
+
+.active-link2{
   color:  #fb8746 !important; 
 }
 

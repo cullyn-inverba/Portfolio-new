@@ -44,7 +44,6 @@ mat-card {
     position: fixed;
     margin-top: 8em;
     width: 90vmin;
-    min-width: 450px;
   }
   
   .tab-content {
@@ -60,6 +59,7 @@ mat-card {
     width: 60%;
     margin: -3em;
     margin-top: 0em;
+    margin-bottom: -1em;
   }
   
   .svg-container2 { 

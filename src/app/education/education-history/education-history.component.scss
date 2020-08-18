@@ -14,7 +14,6 @@
   
 
 .card-container {
-    min-width: 450px;
     position: fixed;
     margin-top: 8em;
     height: 85%;
@@ -56,6 +55,7 @@
   transform: translate(12%, -125%) scale(0.7);
   overflow: hidden; 
   opacity: 30%;
+  -webkit-opacity: 0.3;
 }
 
 @media only screen and (max-width: 602px) {
@@ -65,4 +65,23 @@
     .svg-container { 
       transform: translate(15%, -135%) scale(0.7);
     }
+}
+
+@media only screen and (max-width: 458px) {
+  .svg-container { 
+    transform: translate(16%, -58vw) scale(0.6);
+  }
+}
+
+
+@media only screen and (max-width: 414px) {
+  .svg-container { 
+    transform: translate(20%, -60vw) scale(0.6);
+  }
+}
+
+@media only screen and (max-width: 331px) {
+  .svg-container { 
+    transform: translate(18%, -245%) scale(0.6);
+  }
 }

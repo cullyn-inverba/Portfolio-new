@@ -11,7 +11,6 @@
 }
 
 .content {
-  min-width: 450px;
   position: fixed;
   top: 10%;
   height: 85%;
@@ -22,7 +21,7 @@
 }
 
 mat-card {
-  margin: 0 2em 2em 2em;
+  margin: 0 1.5em 2em 2em;
   max-width: 65ch;
   background-color: transparent;
   background-image: linear-gradient(20deg, #3443aaf8 0%, #3d3fbdec 100%);
@@ -89,11 +88,12 @@ li:not(:last-child) {
   position: absolute;
   width: 60%;
   left: 30%;
-  min-width: fit-content;
   max-width: 800px;
+  min-width: fit-content;
   transform: translate(5%, -105%);
   overflow: hidden; 
   opacity: 30%;
+  -webkit-opacity: 0.3;
 }
 
 
@@ -103,9 +103,16 @@ li:not(:last-child) {
   }
   .svg-container { 
     width: 50%;
-    left: 30%;
-    min-width: fit-content;
-    max-width: 800px;
     transform: translate(12%, -122%);
+  }
+}
+
+@media only screen and (max-width: 466px) {
+  mat-card {
+    background-image: linear-gradient(20deg, #2c3dac 0%, #3d3fbd 100%);
+  }
+  .svg-container { 
+    width: 50%;
+    transform: translate(15%, -140%) scale(0.8);
   }
 }

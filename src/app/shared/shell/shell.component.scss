@@ -101,6 +101,10 @@ body:hover {
     .mat-toolbar {
         height: 3.5em;
       }
+      .mat-icon-button{
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
 }
 
 @media only screen and (min-width: 602px) {
@@ -108,3 +112,15 @@ body:hover {
         margin-right: 0.2em;
     }
 }
+
+@media only screen and (max-width: 450px) {
+  .mat-icon-button{
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+  .mat-raised-button{
+    transform: scale(0.8);
+    margin-right: -2vw;
+  }
+}
+

@@ -13,7 +13,6 @@
   }
 
   .content {
-    min-width: 450px;
     position: fixed;
     height: 100%;
     overflow-y: scroll;
@@ -25,7 +24,6 @@
  mat-card {
     margin: 8em 2em 2em 2em;
     max-width: 60ch;
-    min-width: 350px;
     background-color: rgba(6, 6, 36, 0.5);
     display: flex;
     align-items: center;
@@ -147,7 +145,7 @@
     transform: translate(10%, -100%);
     overflow: hidden; 
     opacity: 30%;
-    z-index: -1;
+    -webkit-opacity: 0.3;
   }
   
   .svg-content2 {
@@ -158,6 +156,7 @@
       position: relative;
     width: 100%;
     opacity: 50%;
+    -webkit-opacity: 0.5;
   }
 
   @media only screen and (max-width: 602px) {

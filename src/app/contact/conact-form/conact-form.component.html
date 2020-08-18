@@ -1,5 +1,6 @@
 <div class='bg'>
-    <mat-card>
+  <div class='content'>
+  <mat-card>
     <h1 [hidden]='success' [hidden]='submitted' >Contact me</h1>
     <h1 class='success' *ngIf='success' >Success! Message Received</h1>
     <h1 class='failure' *ngIf='error' >Well, this is embarrassing</h1>
@@ -61,9 +62,15 @@
     <div *ngIf='error'>
       <p>Something went wrong 😟</p>
       <p>Here's my email: <strong style="color: #FF9800">cullyn.newman@gmail.com</strong></p>
-      <a>Or... call me maybe? <strong style="color: #FF9800">1+971-772-6835</strong> </a>
+      <a>Or... text me maybe? <strong style="color: #FF9800">1+971-772-6835</strong> </a>
     </div>
     </mat-card-content>
-    <h1 class='success' *ngIf='success' >Call me maybe? 1+971-772-6835</h1>
+    <h1 class='success' *ngIf='success' >text me maybe? 1+971-772-6835</h1>
   </mat-card>
+  <a 
+  class='image-credit'
+  href="https://www.flickr.com/photos/130954536@N04/16743873771"
+  target="_blank"
+  rel="noopener">Image credit: Grant Collins</a>
+</div> 
 </div>

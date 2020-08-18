@@ -8,17 +8,25 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
 
-mat-card {
-    width: 60vmin;
+  .content {
+    min-width: 450px;
     position: fixed;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+ mat-card {
+    margin: 8em 2em 2em 2em;
+    max-width: 60ch;
     min-width: 350px;
-    top: 12%;
-    background-color: rgba(5, 5, 5, 0.3);
-    margin: 2 auto;
+    background-color: rgba(6, 6, 36, 0.5);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -34,6 +42,10 @@ mat-card {
   
   .form-container{
     overflow-y: scroll;
+  }
+
+  ::-webkit-scrollbar-track {
+    margin-top: 1em;
   }
   
   h1 {
@@ -128,15 +140,14 @@ mat-card {
   }
   
   .svg-container { 
-      position: absolute;
-    width: 60%;
+    position: absolute;
+    width: 70%;
     left: 30%;
-    min-width: fit-content;
     max-width: 800px;
     transform: translate(10%, -100%);
     overflow: hidden; 
-    z-index: -10;
     opacity: 30%;
+    z-index: -1;
   }
   
   .svg-content2 {
@@ -148,3 +159,25 @@ mat-card {
     width: 100%;
     opacity: 50%;
   }
+
+  @media only screen and (max-width: 602px) {
+    .svg-container { 
+      transform: translate(5%, -110%);
+    }
+  }
+
+  .image-credit{
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    font-size: 14px;
+    text-decoration: none;
+    color: #aeb6ff9b;
+    transition: 1s ease-out;
+}
+
+.image-credit:hover{
+  text-decoration: underline;
+  transform: translateY(-0.2em);
+  color: #9da6fc;
+}

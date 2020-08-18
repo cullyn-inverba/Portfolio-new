@@ -16,25 +16,25 @@
 .card-container {
     min-width: 450px;
     position: fixed;
-    top: 10%;
+    margin-top: 8em;
     height: 85%;
     overflow-y: scroll;
     display: flex-box;
     flex-direction: column;
-    position: absolute;
   }
   
   mat-card{
     background-color: transparent;
-    background-image: linear-gradient(20deg, #0f1744e1 0%, #384691c2 100%);
+    background-image: linear-gradient(20deg, #091038 0%, #313d7ee3 100%);
     margin: 0 2em 2em 2em;
     max-width: 65ch;
     transition: 1s ease-out;
+    overflow: hidden;
   }
   
   mat-card:hover {
     transform: translateY(-0.3rem);
-    background-image: linear-gradient(20deg, #091038 0%, #313d7ee3 100%);
+    background-image: linear-gradient(20deg, #091038 0%, #313d7e 100%);
   }
   
   
@@ -42,8 +42,27 @@
     background-size: cover;
   }
 
-  @media only screen and (max-width: 602px) {
-    mat-card{
-        background-image: linear-gradient(20deg, #091038 0%, #313d7ee3 100%);
-      }
+
+.svg-content {
+  width: 60%;
+}
+
+.svg-container { 
+  position: absolute;
+  width: 60%;
+  left: 20%;
+  min-width: fit-content;
+  max-width: 800px;
+  transform: translate(12%, -125%) scale(0.7);
+  overflow: hidden; 
+  opacity: 30%;
+}
+
+@media only screen and (max-width: 602px) {
+  mat-card{
+      background-image: linear-gradient(20deg, #091038 0%, #313d7e 100%);
+    }
+    .svg-container { 
+      transform: translate(15%, -135%) scale(0.7);
+    }
 }

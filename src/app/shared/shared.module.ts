@@ -20,7 +20,7 @@ const modules = [
   MatToolbarModule,
   MatIconModule,
   MatButtonModule,
-  MatCardModule
+  MatCardModule,
 ];
 
 @NgModule({

@@ -8,6 +8,7 @@ import { SharedModule } from "../shared/shared.module";
 import { MatTabsModule} from '@angular/material/tabs';
 
 
+
 @NgModule({
   declarations: [WorkHistoryComponent],
   imports: [
@@ -17,4 +18,4 @@ import { MatTabsModule} from '@angular/material/tabs';
     SharedModule
   ]
 })
-export class WorksModule { }
+export class WorksModule {}

@@ -68,7 +68,7 @@ mat-card {
   }
   
   .image-credit{
-      position: absolute;
+      position: fixed;
       bottom: 1em;
       right: 1em;
       font-size: 14px;
@@ -78,9 +78,8 @@ mat-card {
   }
   
   .image-credit:hover{
-    position: absolute;
     text-decoration: underline;
-    transform: translateY(-0.3em);
+    transform: translateY(-0.2em);
     color: #fcc19d;
 }
   

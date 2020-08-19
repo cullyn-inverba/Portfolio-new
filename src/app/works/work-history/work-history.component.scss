@@ -10,16 +10,11 @@ mat-card {
 }
 
 mat-card:hover {
-  background-image: linear-gradient(20deg, #19213db2 0%, #49232bb0 100%);
+  background-image: linear-gradient(20deg, #19213dc0 0%, #49232bbd 100%);
 }
 
 .tab-icon {
   margin-right: 6px;
-}
-
-mat-tab-group {
-  position: fixed;
-  margin-top: 6em;
 }
 
 .tab-content {
@@ -49,4 +44,10 @@ mat-tab-group {
 
 .image-credit:hover {
   color: #fcc19d;
+}
+
+@media only screen and (max-width: 602px) {
+  mat-card {
+    background-image: linear-gradient(20deg, #19213db2 0%, #49232bb0 100%);
+  }
 }

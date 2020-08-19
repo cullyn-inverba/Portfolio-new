@@ -123,18 +123,22 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: background-image 1s ease-out !important;
+  -webkit-transition: background-image 1s ease-out !important;
 }
 
 .content {
   position: fixed;
   margin-top: 6em;
   width: 100%;
-  height: 88%;
+  height: 78%;
   overflow-y: auto;
   overflow-x: hidden;
   display: flex;
   align-items: center;
   flex-direction: column;
+  transition: 1s ease-out !important;
+  -webkit-transition: 1s ease-out !important;
   scrollbar-width: none;
 }
 
@@ -165,7 +169,6 @@ mat-card {
   width: 75vw;
   max-width: 60ch;
   background-color: transparent !important;
-  transition: 1s ease-out !important;
 }
 
 mat-card:hover {
@@ -196,11 +199,12 @@ mat-card:hover {
 
 .image-credit {
   position: fixed;
-  bottom: 1em;
+  bottom: 0.5em;
   right: 1em;
-  font-size: 14px;
+  font-size: 10px;
   text-decoration: none;
   transition: 1s ease-out !important;
+  z-index: -2;
 }
 
 .image-credit:hover {

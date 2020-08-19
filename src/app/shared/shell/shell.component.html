@@ -1,7 +1,7 @@
 <body class="mat-app-background">
   <mat-toolbar>
     <mat-icon class="logo" routerLink ="/home" routerLinkActive='active-link1' mat-icon>home</mat-icon>
-    <span class="fill-space"></span>
+    <span class="fill-space1"></span>
     <div *ngIf="!(isHandset$ | async)">
       <a mat-button  routerLinkActive='active-link1' routerLink ="/research">
         <mat-icon>biotech</mat-icon><b>Resarch</b></a
@@ -14,15 +14,15 @@
       >
     </div>
     <div *ngIf="isHandset$ | async">
-      <a mat-icon-button class="logo" routerLink ="/research"  routerLinkActive='active-link2'>
+      <a mat-icon-button  routerLink ="/research"  routerLinkActive='active-link2'>
         <mat-icon>biotech</mat-icon>
         <div class="label3">Resarch</div>
       </a>
-      <a mat-icon-button class="logo"  routerLink ="/works"  routerLinkActive='active-link2'>
+      <a mat-icon-button routerLink ="/works"  routerLinkActive='active-link2'>
         <mat-icon>architecture</mat-icon>
         <div class="label2">Works</div>
       </a>
-      <a mat-icon-button class="logo"  routerLink ="/education"  routerLinkActive='active-link2'>
+      <a mat-icon-button routerLink ="/education"  routerLinkActive='active-link2'>
         <mat-icon>school</mat-icon>
         <div class="label">Education</div>
       </a>
@@ -30,6 +30,7 @@
     <span class="fill-space"></span>
     <button mat-raised-button class='orange' routerLink ="/contact" routerLinkActive='blue' ><b>Contact</b></button>
   </mat-toolbar>
-
   <ng-content></ng-content>
+
+  <mat-
 </body>

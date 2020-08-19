@@ -123,9 +123,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: background-image 1s ease-out !important;
-  -webkit-transition: background-image 1s ease-out !important;
-}
+} 
 
 .content {
   position: fixed;
@@ -137,8 +135,6 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  transition: 1s ease-out !important;
-  -webkit-transition: 1s ease-out !important;
   scrollbar-width: none;
 }
 
@@ -175,6 +171,7 @@ mat-card {
   width: 75vw;
   max-width: 60ch;
   background-color: transparent !important;
+  transition: 1s ease-out !important;
 }
 
 mat-card:hover {

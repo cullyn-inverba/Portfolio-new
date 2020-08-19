@@ -1,55 +1,23 @@
-.bg {
+.background {
   background-image: url("/assets/research.jpg");
-  height: 100%;
-  background-attachment: fixed;
   background-position: left 75% top 10%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.content {
-  position: fixed;
-  margin-top: 6em;
-  height: 85%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
 }
 
 mat-card {
-  margin: 0 1.5em 2em 2em;
-  max-width: 65ch;
-  background-color: transparent;
   background-image: linear-gradient(20deg, #3443aaf8 0%, #3d3fbdec 100%);
-  transition: 1s ease-out;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 
-mat-card-title {
-  font-weight: 500;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-size: 28px !important;
-  color: #212f81;
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1),
-    0px -1px 0px rgba(0, 0, 0, 0.7);
+mat-card:hover{
+  background-image: linear-gradient(20deg, #2c3dac 0%, #3644c2f3 100%);
 }
 
-mat-card:hover {
-  transform: translateY(-0.3rem);
-  background-color: transparent;
-  background-image: linear-gradient(20deg, #2c3dac 0%, #3d3fbd 100%);
-  transition: 1s ease-out;
+.svg-container{ 
+  transform: translate(5%, -105%);
 }
 
 h2 {
   color: #d8daec;
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
   margin-bottom: 4px;
   margin-top: 24px;
 }
@@ -57,11 +25,12 @@ h2 {
 .hub {
   color: #ffab40;
   text-decoration: none;
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 .hub:hover {
   color: #f77930;
+  text-decoration: underline;
 }
 
 .orcid {
@@ -78,28 +47,9 @@ li:not(:last-child) {
   margin-bottom: 5px;
 }
 
-
-.svg-content {
-  width: 60%;
-  overflow: hidden; 
-}
-
-.svg-container { 
-  position: absolute;
-  width: 60%;
-  left: 30%;
-  max-width: 800px;
-  min-width: fit-content;
-  transform: translate(5%, -105%);
-  overflow: hidden; 
-  opacity: 30%;
-  -webkit-opacity: 0.3;
-}
-
-
 @media only screen and (max-width: 602px) {
   mat-card {
-    background-image: linear-gradient(20deg, #2c3dac 0%, #3d3fbd 100%);
+    background-image: linear-gradient(20deg, #2c3dac 0%, #4648d1 100%);
   }
   .svg-container { 
     width: 50%;
@@ -108,9 +58,6 @@ li:not(:last-child) {
 }
 
 @media only screen and (max-width: 466px) {
-  mat-card {
-    background-image: linear-gradient(20deg, #2c3dac 0%, #3d3fbd 100%);
-  }
   .svg-container { 
     width: 50%;
     transform: translate(15%, -140%) scale(0.8);

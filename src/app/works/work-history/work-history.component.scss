@@ -1,87 +1,52 @@
-.bg {
+.background {
   background-image: url("/assets/works.jpg");
-  /* Full height */
-  height: 100%;
-  /* Center and scale the image nicely */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 mat-card {
-    margin: 2em;
-    margin-top: 1em;
-    width: fit-content;
-    background-color: transparent;
-    background-image: linear-gradient(20deg, #1f28499b 0%, #49232b96 100%);
-    transition: 1s ease-out;
-  }
-  
-  mat-card:hover {
-    transform: translateY(-0.3rem);
-    background-color: transparent;
-    background-image: linear-gradient(20deg, #19213db2 0%, #49232bb0 100%);
-    transition: 1s ease-out;
-  }
-  
-  
-  .header-image {
-    background-size: cover;
-  }
-  
-  .tab-icon {
-    margin-right: 10px;
-  }
-  
-  .header-image {
-    background-size: cover;
-  }
-  
-  mat-tab-group {
-    position: fixed;
-    margin-top: 6em;
-    width: 90vmin;
-  }
-  
-  .tab-content {
-    margin: 12px;
-    height: 100%;
-    overflow-y: scroll;
-    display: grid;
-    place-items: center;
-  }
-
-
-.svg-content2 {
-    width: 60%;
-    margin: -3em;
-    margin-top: 0em;
-    margin-bottom: -1em;
-  }
-  
-  .svg-container2 { 
-    display: grid;
-    place-items: center;
-  }
-  
-  .image-credit{
-      position: fixed;
-      bottom: 1em;
-      right: 1em;
-      font-size: 14px;
-      text-decoration: none;
-      color: #fcc19d9b;
-      transition: 1s ease-out;
-  }
-  
-  .image-credit:hover{
-    text-decoration: underline;
-    transform: translateY(-0.2em);
-    color: #fcc19d;
+  background-image: linear-gradient(20deg, #1f28499b 0%, #49232b96 100%);
 }
-  
-  
+
+mat-card:hover {
+  background-image: linear-gradient(20deg, #19213db2 0%, #49232bb0 100%);
+}
+
+.tab-icon {
+  margin-right: 6px;
+}
+
+mat-tab-group {
+  position: fixed;
+  margin-top: 6em;
+}
+
+.tab-content {
+  margin: 12px;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.svg-content-tab {
+  width: 60%;
+  margin: -3em;
+  margin-top: 0em;
+  margin-bottom: -1em;
+}
+
+.svg-container-tab {
+  display: grid;
+  place-items: center;
+}
+
+.image-credit {
+  color: #fcc19d9b;
+}
+
+.image-credit:hover {
+  color: #fcc19d;
+}

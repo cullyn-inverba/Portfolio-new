@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators,} from "@angular/forms";
 
 import { AngularFirestore} from "@angular/fire/firestore";
-
 @Component({
   selector: 'app-conact-form',
   templateUrl: './conact-form.component.html',

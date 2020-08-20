@@ -22,7 +22,6 @@ import { SharedModule } from "../shared/shared.module";
     MatInputModule,
     SharedModule,
     AngularFireModule.initializeApp(environment.firebaseConfig, 'cullyn.io'),
-    AngularFirestoreModule,
   ]
 })
 export class ContactModule { }

@@ -9,7 +9,7 @@ const API_KEY = functions.config().sendgrid.key;
 const TEMPLATE_ID = functions.config().sendgrid.template;
 sgMail.setApiKey(API_KEY);
 
-export const newContact = functions.firestore.document('contacts/{contactID}/').onCreate( async (change) => {
+export const newContact = functions.firestore.document('contacts/{contactID}').onCreate( async (change) => {
 
     const contact = change.data() || {};
 

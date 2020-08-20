@@ -1,22 +1,23 @@
 .background {
   background-image: url("/assets/research.jpg");
-  background-position: left 75% top 10%;
 }
 
 mat-card {
-  background-image: linear-gradient(20deg, #3443aaf8 0%, #3d3fbdec 100%);
+  background-image: linear-gradient(45deg, #1f4ea0ef 0%, #4078d8de 100%);
 }
 
 mat-card:hover{
-  background-image: linear-gradient(20deg, #2c3dac 0%, #3644c2f3 100%);
+  background-image: linear-gradient(45deg, #164597 0%, #2a66cefa 100%);
 }
 
 .svg-container{ 
   transform: translate(5%, -105%);
+  opacity: 40%;
+  -webkit-opacity: 0.4;
 }
 
 h2 {
-  color: #d8daec;
+  color: #cdd0e4b0;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
   margin-bottom: 4px;
   margin-top: 24px;
@@ -49,7 +50,7 @@ li:not(:last-child) {
 
 @media only screen and (max-width: 602px) {
   mat-card {
-    background-image: linear-gradient(20deg, #2c3dac 0%, #4648d1 100%);
+    background-image: linear-gradient(45deg, #164597 0%, #2a66cefa 100%);
   }
   .svg-container { 
     width: 50%;

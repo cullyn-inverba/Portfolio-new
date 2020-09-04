@@ -38,6 +38,17 @@ mat-card:hover {
   place-items: center;
 }
 
+.hub {
+  color: #ffab40;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.hub:hover {
+  color: #f77930;
+  text-decoration: underline;
+}
+
 .image-credit {
   color: #fcc19d9b;
 }
